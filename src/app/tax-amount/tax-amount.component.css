@@ -1,0 +1,24 @@
+/* .input-group-text{
+    background-color: rgb(255, 255, 255);
+    }
+  
+  .form-control{
+    border-right: none;
+  
+  }
+  
+  .input-group{
+    width: 200px;
+    float: right;
+    border:2px solid #4f4f4f;
+    border-radius:5px;
+  } */
+
+  .form-control{
+    /* border-right: none; */
+    width: 200px;
+    float: right;
+    border:2px solid #4f4f4f;
+    border-radius:5px;
+    text-align: end;
+  }

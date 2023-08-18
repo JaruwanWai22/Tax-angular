@@ -1,0 +1,14 @@
+.modal-header {
+    padding: 6px;
+  }
+  
+.modal-title {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* Style for modal body */
+.modal-body {
+    padding: 15px;
+  }
+  

@@ -1,0 +1,71 @@
+<div class="container-fluid">
+  <ol class="c-stepper">
+    <li class="c-stepper__item">
+      <h4 class="c-stepper__title">1</h4>
+      <p class="c-stepper__desc">Input Detail</p>
+    </li>
+    <li class="c-stepper__item">
+      <h4 class="c-stepper__titleactive">2</h4>
+      <p class="c-stepper__descactive">Review & Confirm</p>
+    </li>
+  </ol>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h5>Tax Filing Detail</h5>
+    <hr>
+    <div class="row">
+      <div class="col-sm-2">
+        <p><b>Type of filing</b></p>
+      </div>
+      <div class="col-sm-3">{{filingType}}</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <p><b>VAT Month</b></p>
+      </div>
+      <div class="col-sm-3">
+        <p>{{month}} {{year}}</p>
+      </div>
+    </div>
+    <br>
+
+    <h5>Tax Computation</h5>
+    <hr>
+    <div class="row">
+      <div class="col-sm-8">
+        <p><b>Total value to taxable electronic service exclusive of VAT</b></p>
+      </div>
+      <div class="col-sm-4 taxvalue">
+        <b>{{ saleAmount | number: '1.2-2' }} THB</b>
+        <span class="additional-space">&nbsp;</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <b>Total VAT to be remitted</b>
+        <p>(7% of Total value of taxable electronic service exclusive of VAT)</p>
+      </div>
+      <div class="col-sm-4 taxvalue"><b>{{ taxAmount | number: '1.2-2' }} THB</b>
+        <span class="additional-space">&nbsp;</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 pt-2">
+        <p><b>Total Amount Payable</b></p>
+      </div>
+      <div class="col-sm-4 totalvalue"><b>{{ totalAmount | number: '1.2-2' }} THB</b>
+        <span class="additional-space">&nbsp;</span>
+      </div>
+    </div>
+    <br>
+    <h5>Declaration</h5>
+    <hr>
+    <p>i hereby certify that information given above are true and current and agree to be bound by such in formation.
+    </p>
+  </div>
+</div>
+<div class="button-container-div">
+  <button type="button" class="btn btn-confirm" (click)="confirmAndSubmit()">Confirm and Submit</button>
+</div>
+<br>

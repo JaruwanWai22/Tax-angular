@@ -1,0 +1,20 @@
+<form class="form-inline justify-content-end">
+<!-- <label>1. Total value of taxable electronic service exclusive of VAT</label> -->
+<input type="text" class="form-control" placeholder="THB"
+  [(ngModel)]="saleAmount" name="saleAmount"
+  (ngModelChange)="Data()"
+  (keypress)="onInputKeyPress($event)"
+  (focusout)="formatAmount()"/>
+</form>
+
+
+
+
+
+
+<!-- <div class="input-group">
+    <input type="text" class="form-control">
+    <div class="input-group-append">
+      <span class="input-group-text">THB</span>
+    </div>
+  </div> -->

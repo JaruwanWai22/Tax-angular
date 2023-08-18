@@ -1,0 +1,12 @@
+<form class="form-inline justify-content-between">
+  <label>2. Total VAT to be remitted ( 7% of 1.)</label>
+  <input type="text" class="form-control" placeholder="THB" id="taxAmount" name="taxAmount" 
+  [(ngModel)]="taxAmount" (ngModelChange)="onTaxAmountChange($event)" (input)="Data()"
+    (keypress)="onInputKeyPress($event)" (focusout)="formatAmount()">
+</form>
+<!-- <div class="input-group">
+    <input type="text" class="form-control">
+    <div class="input-group-append">
+      <span class="input-group-text">THB</span>
+    </div>
+  </div> -->

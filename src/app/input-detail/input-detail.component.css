@@ -1,0 +1,143 @@
+.card{
+    margin-top: 40px;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-color: black;
+}
+
+.mat-backbtn {
+    border: 1px solid black;
+    font-size: 16px; 
+}
+
+.btn {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+.btn-back {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.75);
+    border: 2px solid rgba(52, 52, 52, 0.75);
+    border-radius: 40px;
+    padding: 10px 35px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+  }
+  
+.btn-back:hover, .btn-next:hover{
+    color: #FFF;
+    background: rgba(134, 134, 134, 0.75);
+    border: 2px solid rgba(122, 122, 122, 0.75);
+  }
+
+.btn-next {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(19, 19, 19, 0.75);
+    background: rgba(0, 0, 0, 0.925);
+    border-radius: 40px;
+    padding: 10px 35px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .control-label.required:after { 
+    color: #d00;
+    content: "*";
+    margin-left: 5px;
+    top:7px;
+    font-weight:bold;
+  }
+
+  .my-header h5{ 
+    display: inline;
+  }
+
+  .my-header p { 
+    float: right;
+    text-decoration: underline;
+  }
+
+
+.c-stepper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 40px;
+    
+}
+
+.c-stepper__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.c-stepper__titleactive {
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  padding: 10px;
+  background-color: #fff;
+  border: 3px solid #000;
+  text-align: center;
+  margin: auto;
+  color: black;
+}
+.c-stepper__descactive{
+  color: black;
+  font-weight:bold;
+  
+}
+
+.c-stepper__title {
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  padding: 10px;
+  background-color: #fff;
+  border: 3px solid #bebebe;
+  text-align: center;
+  margin: auto;
+  color: #bebebe;
+}
+
+
+.c-stepper__item:before {
+    content: "";
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 3rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 1rem auto 0;
+    
+}
+
+
+.c-stepper__item:not(:last-child):after {
+  content: "";
+  position: relative;
+  top: 4.5rem;
+  left: 50%;
+  height: 2px;
+  background-color: #e0e0e0;
+  order: -1;
+  margin: auto;
+  width: 80%;
+  
+ 
+}
+
+  
+
+.form-inline {
+  align-items: center;
+  padding-bottom: 12px;
+
+}
+
+.text-inline {
+padding-top: 8px;
+}

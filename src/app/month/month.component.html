@@ -1,0 +1,21 @@
+<select name="month" id="month" [(ngModel)]="month" (click)="Data()">
+  <option value="01">January</option>
+  <option value="02">February</option>
+  <option value="03">March</option>
+  <option value="04">April</option>
+  <option value="05">May</option>
+  <option value="06">June</option>
+  <option value="07">July</option>
+  <option value="08">August</option>
+  <option value="09" disabled>September</option>
+  <option value="10" disabled>October</option>
+  <option value="11" disabled>November</option>
+  <option value="12" disabled>December</option>
+</select>
+
+<!-- <select [(ngModel)]="month">
+  <option *ngFor="let m of months; let i = index" [value]="formatMonth(i + 1)" [disabled]="isDisabled(i + 1)">
+    {{ m }}
+  </option>
+</select> -->
+<!-- <span>Selected Month: {{ selectedMonth }}</span> -->

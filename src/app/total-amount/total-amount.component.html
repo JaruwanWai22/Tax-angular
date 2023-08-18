@@ -1,0 +1,7 @@
+<form class="form-inline justify-content-between">
+    <label>5. Total amount of VAT, surcharge, and penalty to be remitted (2.+3.+4.)</label>
+    <input type="text" class="form-control" [placeholder]="(totalAmount === 200 || totalAmount === 0) ? '0.00 THB' : (totalAmount === null) ? '0.00 THB' : ''" 
+    readonly id="totalAmount" name="totalAmount" readonly
+    [(ngModel)]="totalAmount" (ngModelChange)="onTotalAmountChange($event)"
+    (keypress)="onInputKeyPress($event)" (focusout)="formatAmount()">
+    </form>

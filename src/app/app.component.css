@@ -1,0 +1,42 @@
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    margin: 0;
+    background-color: rgb(238, 237, 237);
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(205, 204, 204);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.topnav {
+    background-color: rgb(238, 237, 237);
+    overflow: hidden;
+}
+
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.header-center {
+    margin: auto;
+    width: 100%;
+    border-top: 2px solid #4f4f4f;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.body-center{
+    margin: auto;
+    width: 70%;
+}

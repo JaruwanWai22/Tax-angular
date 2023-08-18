@@ -1,0 +1,114 @@
+.card{
+    margin-top: 40px;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-color: black;
+}
+
+.btn-confirm {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.884);
+    border: 2px solid rgba(52, 52, 52, 0.902);
+    border-radius: 40px;
+    padding: 10px 35px;
+    background: rgba(0, 0, 0, 0.884);
+    transition: all 0.3s ease 0s;
+    color: #FFF;
+  }
+
+.button-container-div {
+    text-align: center;
+}
+  
+.btn-confirm:hover{
+    color: #FFF;
+    background: rgba(134, 134, 134, 0.75);
+    border: 2px solid rgba(122, 122, 122, 0.75);
+  }
+
+
+  .c-stepper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 40px;
+    
+}
+
+.c-stepper__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.c-stepper__titleactive {
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  padding: 10px;
+  background-color: #fff;
+  border: 3px solid #000;
+  text-align: center;
+  margin: auto;
+  color: black;
+}
+.c-stepper__descactive{
+  color: black;
+  font-weight:bold;
+  
+}
+
+.c-stepper__title {
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  padding: 10px;
+  background-color: #000;
+  border: 3px solid #000;
+  text-align: center;
+  margin: auto;
+  color: white
+}
+
+
+.c-stepper__item:before {
+    content: "";
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 3rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 1rem auto 0;
+    
+}
+
+
+.c-stepper__item:not(:last-child):after {
+  content: "";
+  position: relative;
+  top: 4.5rem;
+  left: 50%;
+  height: 2px;
+  background-color: #000;
+  order: -1;
+  margin: auto;
+  width: 80%;
+  
+ 
+}
+
+.taxvalue{
+  text-align: end;
+
+}
+
+.totalvalue{
+  font-size: 20px;
+  text-align: end;
+}
+
+.additional-space {
+  margin-left: 50px; /* ปรับตามความต้องการ */
+}
+

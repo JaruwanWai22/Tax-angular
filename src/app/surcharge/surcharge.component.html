@@ -1,0 +1,6 @@
+<form class="form-inline justify-content-between">
+    <label>3. Surcharge</label>
+    <input type="text" class="form-control" [placeholder]="(surcharge === 0) ? '0.00 THB' : (surcharge === null) ? '0.00 THB' : ''"readonly
+    [(ngModel)]="surcharge" (ngModelChange)="onSurchargeChange($event)" [value]="formatNumber(surcharge)"
+    (keypress)="onInputKeyPress($event)" (focusout)="formatAmount()">
+    </form>

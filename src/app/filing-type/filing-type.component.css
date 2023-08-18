@@ -1,0 +1,39 @@
+
+  .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: 2px #272727;
+  }
+  
+  .custom-control-input:checked~.custom-control-label.black::before {
+    background-color: rgb(18, 18, 18);
+  }
+
+  .control-label.required:after { 
+    color: #d00;
+    content: "*";
+    margin-left: 5px;
+    top:7px;
+    font-weight:bold;
+  }
+  
+  .my-header h5{ 
+    display: inline;
+  }
+
+  .my-header p { 
+    float: right;
+    text-decoration: underline;
+  }
+
+.form-inline {
+    align-items: center;
+    padding-bottom: 12px;
+
+}
+
+.text-inline {
+  padding-top: 8px;
+}
+
+
+

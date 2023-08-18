@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-sm-3">
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="Ordinary" value="0" [(ngModel)]="filingType"
+                name="filingType" checked (click)="Data()" required>
+            <label class="custom-control-label black" for="Ordinary">Ordinary Filing</label>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="Additional" [(ngModel)]="filingType" value="1"
+                (click)="Data()" name="filingType">
+            <label class="custom-control-label black" for="Additional">Additional Filing</label>
+        </div>
+    </div>
+</div>
+<!-- <span>Value: {{ selectedfilingType }}</span> -->
+
+<!-- น้องอ๊องอยู่ต้องกดดับเบิ้ลคลิกที่ปุ่มถึงจะเปลี่ยนโหมด -->

@@ -1,0 +1,6 @@
+<form class="form-inline justify-content-between">
+    <label>4. Penalty</label>
+    <input type="text" class="form-control" placeholder="0.00 THB" readonly  id="penalty" name="penalty"
+    [(ngModel)]="penalty" (ngModelChange)="onPenaltyChange($event)"
+    (keypress)="onInputKeyPress($event)" (focusout)="formatAmount()">
+    </form>

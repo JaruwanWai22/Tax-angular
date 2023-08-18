@@ -1,0 +1,63 @@
+<div class="container-fluid" >
+  <ol class="c-stepper">
+    <li class="c-stepper__item">
+      <h4 class="c-stepper__titleactive">1</h4>
+      <p class="c-stepper__descactive">Input Detail</p>
+    </li>
+    <li class="c-stepper__item">
+      <h4 class="c-stepper__title">2</h4>
+      <p class="c-stepper__desc">Review & Confirm</p>
+    </li>
+  </ol>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h5>1. Tax Filing Detail</h5>
+    <hr>
+    <p class="control-label required">Type of filing</p>
+    <app-filing-type></app-filing-type>
+    <br>
+<br>
+<p class="control-label required">Vat Month </p>
+<div class="row">
+    <app-month></app-month>
+    <app-year></app-year>
+</div>
+<br>
+<br>
+<div class="my-header">
+    <h5>2. Tax Computation</h5>
+    <p>View Exchange Rate</p>
+</div>
+<hr>
+<p><b class="control-label required">Provide total value taxable electronic service </b></p>
+<div class="contentShow" *ngIf="filingType === 'Ordinary Filing'">
+    <!-- <div class="inline-text"> -->
+    <div class="form-inline justify-content-between">
+        <p class="text-inline">1. Total value of taxable electronic service exclusive of VAT</p>
+        <app-sale-amount></app-sale-amount>
+    </div>
+    <p><app-tax-amount></app-tax-amount></p>
+    <p [hidden]="true"><app-surcharge></app-surcharge></p>
+    <p [hidden]="true"><app-penalty></app-penalty></p>
+    <p [hidden]="true"><app-total-amount></app-total-amount></p>
+</div>
+
+
+<div class="contentHide" *ngIf="filingType === 'Additional Filing'">
+    <div class="form-inline justify-content-between">
+        <p class="text-inline">1. Underdeclared Thai taxable electronic service</p><app-sale-amount></app-sale-amount>
+    </div>
+    <p><app-tax-amount></app-tax-amount></p>
+    <p><b>In case of late filing and payment, or additional filing</b></p>
+    <p><app-surcharge></app-surcharge></p>
+    <p><app-penalty></app-penalty></p>
+    <p><app-total-amount></app-total-amount></p>
+</div>
+  </div>
+</div>
+<button type="button" class="btn btn-back"
+routerLink="/first-component" routerLinkActive="active" ariaCurrentWhenActive="page">Back</button>
+<button type="button" class="btn btn-next" (click)="NextBtn()"
+routerLink="/second-component" routerLinkActive="active" ariaCurrentWhenActive="page">Next</button>
+<p></p>

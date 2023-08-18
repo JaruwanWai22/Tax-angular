@@ -1,0 +1,6 @@
+.form-control{
+    width: 200px;
+    float: right;
+    border-radius:5px;
+    text-align: end;
+  }
